@@ -73,4 +73,10 @@ class Str
         $this->string = $this->string.implode('', func_get_args());
         return $this;
     }
+
+    public function similar($string, $percent = 90) {
+        similar_text($this->string, $string, $percentOut);
+        return $percentOut >= $percent;
+
+    }
 }
