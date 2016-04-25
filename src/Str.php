@@ -75,7 +75,7 @@ class Str
     }
 
     public function similar($string, $percent = 90) {
-        similar_text($this->string, $string, $percentOut);
+        similar_text(mb_strtolower($this->string, 'UTF-8'), mb_strtolower($string, 'UTF-8'), $percentOut);
         return $percentOut >= $percent;
 
     }
