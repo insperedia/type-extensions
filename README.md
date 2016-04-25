@@ -4,10 +4,10 @@ Scalar types as objects
 Example:
 
 echo Str:n("my string ")->trim()->sub(0,2);
-# my
+$ my
 
 echo Str:n("I like tee")->words[2];
-# like
+$ like
 
 echo Str:n("I like tee")->words[4];
-# false
+$ false
