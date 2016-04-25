@@ -65,7 +65,7 @@ class Str
     }
 
     public function replace($search = "\n", $replace= " ") {
-        $this->string = str_replace($this->string, $search, $replace);
+        $this->string = str_replace($search, $replace, $this->string);
         return $this;
     }
 
