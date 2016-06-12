@@ -13,7 +13,7 @@ class Str
 
     public function __toString()
     {
-       return $this->string;
+        return $this->string;
     }
 
     public static function n($str)
@@ -64,8 +64,11 @@ class Str
         return $this;
     }
 
-    public function replace($search = "\n", $replace= " ") {
-        $this->string = str_replace($search, $replace, $this->string);
+    public function replace($search = "\n", $replace= " ", $caseSensitive = false) {
+        if ($caseSensitive)
+            $this->string = str_replace($search, $replace, $this->string);
+        else
+            $this->string = str_ireplace($search, $replace, $this->string);
         return $this;
     }
 
@@ -79,4 +82,26 @@ class Str
         return $percentOut >= $percent;
 
     }
+
+    public function htmlDecode() {
+        $this->string = html_entity_decode($this->string);
+        return $this;
+    }
+
+    public function stripTags() {
+        $this->string = strip_tags($this->string);
+        return $this;
+    }
+
+    public function firstLine($separator = "\n") {
+        $array = explode($separator, $this->string);
+        return (new Str($array[0]));
+    }
+
+    public function remove($str, $caseSensitive = false) {
+        return $this->replace($str, '', $caseSensitive);
+    }
+
+
+
 }
