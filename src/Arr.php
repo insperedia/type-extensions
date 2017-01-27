@@ -4,7 +4,7 @@
  * Time: 15:58
  */
 
-namespace Insperedia\Scalars;
+namespace Insperedia\TypeExtensions;
 
 class Arr
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Insperedia\Scalars\Tests;
+namespace Insperedia\TypeExtensions\Tests;
 
-use Insperedia\Scalars\Str;
+use Insperedia\TypeExtensions\Str;
 
 class StringTest extends \PHPUnit_Framework_TestCase
 {

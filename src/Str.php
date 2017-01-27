@@ -1,6 +1,6 @@
 <?php
 
-namespace Insperedia\Scalars;
+namespace Insperedia\TypeExtensions;
 
 class Str
 {
