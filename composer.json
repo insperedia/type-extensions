@@ -1,6 +1,6 @@
 {
   "name": "insperedia/scalar-objects",
-  "description": "Scalar types as objects",
+  "description": "Object oriented interface for basic PHP objects",
   "keywords": ["types"],
   "license": "BSD-3-Clause",
   "authors": [

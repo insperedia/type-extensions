@@ -21,6 +21,11 @@ class Str
         return new Str($str);
     }
 
+    public static function new($str)
+    {
+        return new Str($str);
+    }
+
     public function trim() {
         $this->string = trim($this->string);
         return $this;
