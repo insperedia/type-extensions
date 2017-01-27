@@ -1,7 +1,7 @@
 Scalar types as objects
 =======================
 
-Example:
+## Example:
 
 echo Str:n("my string ")->trim()->sub(0,2);
 $ my
