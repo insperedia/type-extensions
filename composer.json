@@ -1,6 +1,6 @@
 {
   "name": "insperedia/type-extensions",
-  "description": "Object oriented interface for basic PHP objects",
+  "description": "Object oriented interface for basic PHP objects.",
   "keywords": ["types"],
   "license": "BSD-3-Clause",
   "authors": [
