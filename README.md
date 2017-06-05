@@ -1,5 +1,5 @@
-Php types as objects
-=======================
+Php types as objects 
+======================
 
 ## Example:
 
