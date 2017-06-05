@@ -1,4 +1,4 @@
-Scalar types as objects
+Php types as objects
 =======================
 
 ## Example:
@@ -11,3 +11,5 @@ $ like
 
 echo Str:n("I like tee")->words[4];
 $ false
+
+
